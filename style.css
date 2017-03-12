@@ -8,3 +8,14 @@
     text-decoration: line-through;
     color: red;
 }
+.form{
+    width: 460px;
+    margin: auto;
+    border: 1px solid #6f6f6f;
+    border-radius: 10px;
+    padding: 5px;
+}
+.titulo{
+    margin: auto;
+    width: 300px;
+}
