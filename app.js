@@ -1,5 +1,19 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ["ngRoute"]);
 
+app.config(function($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl : "index.html"
+        })
+        .when("/london", {
+            templateUrl : "cumpridas.html",
+            controller : ""
+        })
+        .when("/paris", {
+            templateUrl : "compras.html",
+            controller : "myCtrl"
+        });
+});
 app.controller('myCtrl', function($scope) {
     $scope.itens = [
         {produto: 'Xbox One', quantidade: 1, comprado: false},
